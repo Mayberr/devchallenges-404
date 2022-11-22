@@ -16,80 +16,131 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Space+Mono"
+    />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
     />
 
     <title>Devchallenges</title>
 
     <style>
+      html, body {
+        height: 100%;
+      }
       body {
-        font-family: "Poppins", sans-serif;
+        font-family: "Space Mono", sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-height: 100%;
       }
-
-      ul {
-        padding-left: 24px;
+      header {
+        flex-shrink: 0;
+        font-family: "Inconsolata";
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -0.08em;
+        line-height: 25px;
       }
-
-      li {
-        margin-bottom: 8px;
+      .error-content {
+        display: flex;
+        flex: 1 0 auto;
       }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
+      .text-placeholder p {
         font-weight: 400;
       }
+      h1 {
+        font-weight: 700;
+        line-height: 95px;
+        letter-spacing: -0.035em;
 
-      .welcome-text h1 {
-        font-size: 1.5rem;
       }
+      button {
+        width: 216px;
+        height: 68px;
+        background-color: black;
+        color: white;
+        border: none;
+        font-family: "Space Mono";
+        margin-top: 2em;
+      }
+      .image-scarecrow {
+        max-width: 100%;
+      }
+      footer {
+        font-family: "Montserrat";
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        color: #BDBDBD;
+        text-align: center;
+        flex-shrink: 0;
+        width: 100%;
+        position: sticky;
+      }
+      footer a {
+        font-weight: 700;
+        color: #BDBDBD;
+      }
+      @media only screen and (max-width: 768px){
+        .error-content {
+          flex-direction: column;
+        }
+        .text-placeholder h1 {
+          font-size: 48px;
+          line-height: 71px;
+        }
+        .text-placeholder p {
+          line-height: 27px;
+        }
+        .img-placeholder {
+          max-width: 100%;
+        }
+        .text-placeholder {
+          max-width: 100%;
+        }
+        @media only screen and (min-width: 769px){
+        .error-content {
+          flex-direction: row;
+        }
+        .text-placeholder h1 {
+          font-size: 64px;
+          line-height: 95px;
+        }
+        .text-placeholder p {
+          line-height: 36px;
+        }
+        .img-placeholder {
+          max-width: 50%;
+        }
+        .text-placeholder {
+          max-width: 50%;
+        }
 
-      .welcome-text a {
-        color: #f7542e;
       }
     </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <header>
+      <p>404 not found</p>
+    </header>
+    <div class ="error-content">
+      <div class="img-placeholder">
+        <img src="Scarecrow.png" class="image-scarecrow" alt="scarecrow">
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <div class ="text-placeholder">
+        <h1>I have bad news for you</h1>
+        <p>The page you are looking for might be removed or is temporarily unavailable</p>
+         <button>BACK TO HOMEPAGE</button>
+       </div>
     </div>
+    <footer>
+      <p>created by <a href="https://github.com/Mayberr" target="_blank">Mayberr</a> - devchallenges.io</p>
+     <footer>
   </body>
 </html>

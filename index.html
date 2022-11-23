@@ -47,16 +47,16 @@
         letter-spacing: -0.08em;
         line-height: 25px;
       }
-      .error-content {
+      .main {
         display: flex;
         flex: 1 0 auto;
         align-items: center;
       }
-      .img-placeholder {
+      .left-column {
         display: flex;
         justify-content: center;
       }
-      .text-placeholder p {
+      .right-column p {
         font-weight: 400;
       }
       h1 {
@@ -93,44 +93,44 @@
         color: #BDBDBD;
       }
       @media only screen and (max-width: 768px){
-        .error-content {
+        .main {
           flex-direction: column;
         }
-        .text-placeholder h1 {
+        .right-column h1 {
           font-size: 48px;
           line-height: 71px;
         }
-        .text-placeholder p {
+        .right-column p {
           line-height: 27px;
         }
-        .img-placeholder {
+        .left-column {
           max-width: 100%;
         }
-        .text-placeholder {
+        .right-column {
           max-width: 100%;
         }
       }
         @media only screen and (min-width: 769px){
-        .error-content {
+        .main {
           flex-direction: row;
         }
-        .text-placeholder {
+        .right-column {
           align-items: center;
         }
-        .text-placeholder h1 {
+        .right-column h1 {
           font-size: 64px;
           line-height: 95px;
         }
-        .text-placeholder p {
+        .right-column p {
           line-height: 36px;
           max-width: 66%;
         }
-        .img-placeholder {
+        .left-column {
           max-width: 50%;
           margin-right: 5%;
           margin-left: 5%;
         }
-        .text-placeholder {
+        .right-column {
           max-width: 50%;
         }
       }
@@ -140,11 +140,11 @@
     <header>
       <p>404 not found</p>
     </header>
-    <div class ="error-content">
-      <div class="img-placeholder">
+    <div class ="main">
+      <div class="left-column">
         <img src="Scarecrow.png" class="image-scarecrow" alt="scarecrow">
       </div>
-      <div class ="text-placeholder">
+      <div class ="right-column">
         <h1>I have bad news for you</h1>
         <p>The page you are looking for might be removed or is temporarily unavailable</p>
          <button>BACK TO HOMEPAGE</button>

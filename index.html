@@ -50,6 +50,11 @@
       .error-content {
         display: flex;
         flex: 1 0 auto;
+        align-items: center;
+      }
+      .img-placeholder {
+        display: flex;
+        justify-content: center;
       }
       .text-placeholder p {
         font-weight: 400;
@@ -70,7 +75,7 @@
         margin-top: 2em;
       }
       .image-scarecrow {
-        max-width: 100%;
+        max-width: 90%;
       }
       footer {
         font-family: "Montserrat";
@@ -104,9 +109,13 @@
         .text-placeholder {
           max-width: 100%;
         }
+      }
         @media only screen and (min-width: 769px){
         .error-content {
           flex-direction: row;
+        }
+        .text-placeholder {
+          align-items: center;
         }
         .text-placeholder h1 {
           font-size: 64px;
@@ -114,14 +123,16 @@
         }
         .text-placeholder p {
           line-height: 36px;
+          max-width: 66%;
         }
         .img-placeholder {
           max-width: 50%;
+          margin-right: 5%;
+          margin-left: 5%;
         }
         .text-placeholder {
           max-width: 50%;
         }
-
       }
     </style>
   </head>
